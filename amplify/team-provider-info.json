@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify6a714c0d07fa4-staging-105514-authRole",
+      "UnauthRoleArn": "arn:aws:iam::770559897646:role/amplify-amplify6a714c0d07fa4-staging-105514-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::770559897646:role/amplify-amplify6a714c0d07fa4-staging-105514-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-amplify6a714c0d07fa4-staging-105514-deployment",
+      "UnauthRoleName": "amplify-amplify6a714c0d07fa4-staging-105514-unauthRole",
+      "StackName": "amplify-amplify6a714c0d07fa4-staging-105514",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:770559897646:stack/amplify-amplify6a714c0d07fa4-staging-105514/d373a850-5f53-11ed-8e12-063f43ab47d0",
+      "AmplifyAppId": "d322zx9tjcfbjf"
+    },
+    "categories": {
+      "auth": {
+        "rhodesislandce53221d": {}
+      }
+    }
+  }
+}

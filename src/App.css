@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+.menu-bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-bar-item{
+  float: left;
+  padding-right: 3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+  padding: 2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* resources from https://monster-siren.hypergryph.com/about */
+body {
+  background-image: url("../assets/bg_2.png");
+  background-size: cover;
+  cursor: url("../assets/cursor.svg"), default;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html, body {
+  width: 100%; 
+  height: 100%;
+}
+a{
+  color: white;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+element.style {
+  min-width: 1024px;
 }
