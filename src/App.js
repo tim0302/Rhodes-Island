@@ -8,8 +8,16 @@ import {
   View,
   Card,
 } from '@aws-amplify/ui-react';
+import { Unity, useUnityContext } from 'react-unity-webgl';
 
 function App(signOut) {
+  const { unityProvider } = useUnityContext({
+    loaderUrl: 'assets/Build/SkyLineCloud.loader.js',
+    dataUrl: 'assets/Build/SkyLineCloud.data.unityweb',
+    frameworkUrl: 'assets/Build/SkyLineCloud.framework.js.unityweb',
+    codeUrl: 'assets/Build/SkyLineCloud.wasm.unityweb',
+  });
+
   return (
     <div className='App'>
       <div>
@@ -38,6 +46,11 @@ function App(signOut) {
       </div>
 
       <div className='main'>
+        <Unity
+          unityProvider={unityProvider}
+          style={{ width: 800, height: 600 }}
+        />
+
         <div className='title'>
           <h1>Welcome Aboard!</h1>
         </div>
