@@ -48,7 +48,7 @@ function App(signOut) {
       <div className='main'>
         <Unity
           unityProvider={unityProvider}
-          style={{ width: 800, height: 600 }}
+          style={{ width: 1200, height: 600 }}
         />
 
         <div className='title'>
