@@ -11,12 +11,13 @@ import {
 import { Unity, useUnityContext } from 'react-unity-webgl';
 
 function App(signOut) {
-  const { unityProvider } = useUnityContext({
+  const { unityProvider, loadingProgression } = useUnityContext({
     loaderUrl: 'assets/Build/SkyLineCloud.loader.js',
     dataUrl: 'assets/Build/SkyLineCloud.data',
     frameworkUrl: 'assets/Build/SkyLineCloud.framework.js',
     codeUrl: 'assets/Build/SkyLineCloud.wasm',
   });
+  const loadingPercentage = Math.round(loadingProgression * 100);
 
   return (
     <div className='App'>
@@ -46,6 +47,7 @@ function App(signOut) {
       </div>
 
       <div className='main'>
+        <p>Loading... ({loadingPercentage}%)</p>
         <Unity
           unityProvider={unityProvider}
           style={{ width: 1200, height: 600 }}
