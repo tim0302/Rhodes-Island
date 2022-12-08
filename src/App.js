@@ -13,9 +13,9 @@ import { Unity, useUnityContext } from 'react-unity-webgl';
 function App(signOut) {
   const { unityProvider, loadingProgression } = useUnityContext({
     loaderUrl: 'assets/Build/SkyLineCloud.loader.js',
-    dataUrl: 'assets/Build/SkyLineCloud.data.unityweb',
-    frameworkUrl: 'assets/Build/SkyLineCloud.framework.js.unityweb',
-    codeUrl: 'assets/Build/SkyLineCloud.wasm.unityweb',
+    dataUrl: 'assets/Build/SkyLineCloud.data',
+    frameworkUrl: 'assets/Build/SkyLineCloud.framework.js',
+    codeUrl: 'assets/Build/SkyLineCloud.wasm',
   });
   const loadingPercentage = Math.round(loadingProgression * 100);
 
